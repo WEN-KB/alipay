@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>alipay</title>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        a{
+            text-decoration: none;
+
+
+        }
+        header{
+            width: 100%;
+            height:34px;
+
+            background-color: #3b4e5f;
+        }
+        ul li{
+            float: left;
+            list-style-type: none;
+        }
+        header ul{
+            float: right;
+            margin-top:7px;
+            margin-right: 332px; ;
+            text-align: center;
+
+        }
+        header a{
+            color: #ffffff;
+        }
+        #serve img{
+            vertical-align: middle;
+            width: 25px;
+            height: 20px;
+        }
+        #serve{
+            width: 140px;
+        }
+
+        #welcome{
+            width: 124px;
+            height: 20px;
+        }
+        #landing{
+            width: 114px;
+            height:20px;
+            border-right:1px solid black ;
+        }
+        #mine{
+            width: 109px;
+            height: 20px;
+            border-right:1px solid black ;
+        }
+        #safety{
+            width:130px ;
+            height: 20px;
+            border-right:1px solid black ;
+        }
+        nav{
+            width: 100%;
+            height: 95px;
+            background-color:#f4f4f4 ;
+        }
+        dl{
+            height: 95px;
+            float: left;
+            margin-left: 328px;
+        }
+        dl dt{
+            float: left;
+            width: 125px;
+            margin-top: 27px;
+            border-right: 2px solid black;
+        }
+        dl dd{
+            float: left;
+            height: 95px;
+            line-height: 95px;
+            margin-left: 21px;
+        }
+       #hall{
+           font-size: 38px;
+       }
+        #switchover{
+            margin-top:10px;
+        }
+       .home{
+
+            float: right;
+            font-size: 27px;
+            margin-top:40px;
+           margin-right: 315px;
+        }
+        .home img{
+            margin-top: -27px;
+        }
+        nav li{
+            width: 180px;
+            text-align: center;
+
+        }
+        #tab{
+            width: 100%;
+            height: 400px;
+            background-color:#3b4e5f ;
+        }
+
+        #tab span{
+            display: block;
+            height: 74px;
+            width: 400px;
+            line-height: 74px;
+            font-size: 30px;
+
+            margin-left: 340px;
+        }
+        #problem{
+            float: left;
+            width:1000px ;
+            height:58px ;
+            font-size: 23px;
+
+            margin-left:320px ;
+        }
+        #problem li{
+            width:163px ;
+            height:58px ;
+            float: left;
+            line-height: 58px;
+            margin-left: 10px;
+            text-align: center;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            background-color: #dfe9f2;
+        }
+        .pic{
+            vertical-align: middle;
+        }
+        #problem .issue{
+            width:1240px ;
+            height:138px ;
+            border: 0px solid sienna;
+            border-top: 4px solid #f46948;
+            background-color: #f4f4f4;
+        }
+        #problem .issue li{
+            background-color: #f4f4f4;
+
+        }
+        #problem .issue a{
+            color: black;
+        }
+
+
+       #problem .assist{
+            margin-left: 50px;
+        }
+        #problem .issue li{
+            font-size:18px;
+            list-style-type: disc;
+            width: 220px;
+            height:60px ;
+            line-height: 60px;
+            border: 0px solid salmon;
+            text-align: left;
+        }
+       .issue{
+            display: none;
+        }
+        #problem li:hover{
+            background-color: #f46948;
+        }
+        #problem .issue li:hover{
+            background-color:#f4f4f4;
+        }
+        #problem li:hover .issue{
+            display: block;
+        }
+        #account{
+            margin-left: -173px;
+        }
+        #balance{
+            margin-left: -519px ;
+        }
+        #payment{
+            margin-left:-346px;
+        }
+        #packet{
+            margin-left: -692px;
+        }
+        #main{
+            background-color:#f4f4f4 ;
+            width: 100%;
+            height:1020px ;
+            margin-top: -100px;
+        }
+        #txt {
+            display: block;
+            margin-left: 320px;
+            height:33px;
+            font-size: 26px;
+           position: relative;
+            top: 20px;
+
+        }
+        #input{
+            float: left;
+            margin-top:30px ;
+            height: 50px;
+            width:1550px;
+
+        }
+       .search{
+           float: left;
+           font-size:18px ;
+           width: 630px;
+           height: 50px;
+
+           margin-left: 320px;
+       }
+       .butt{
+           float: left;
+
+           width: 150px;
+           height: 50px;
+           margin-left: 5px;
+
+
+       }
+        #appraise{
+            line-height: 50px;
+            float: right;
+        }
+        #list{
+
+            float: left;
+            width: 1380px;
+            height:430px ;
+
+            margin-left: 290px;
+        }
+
+        #list .more{
+            float: right;
+            display: block;
+            position: relative;
+            top: 200px;
+            right: 120px;
+
+        }
+        .listing{
+            list-style-type: none;
+            border: 3px solid saddlebrown;
+            float: left;
+            width:390px ;
+            height: 143px;
+            margin-top: 27px;
+            margin-left: 27px;;
+        }
+        .listing a{
+            color: deepskyblue;
+            font-size: 14px;
+        }
+        .project{
+            width: 140px;
+            height: 20px;
+            margin-top: 10px;
+            margin-left:5px;
+        }
+        .size{
+            float: left;
+            width:100px ;
+            height: 143px;
+            background-color:cyan ;
+        }
+        .size img{
+            margin-left: 30px;
+            margin-top: 27px;
+        }
+        .size span{
+            display:block ;
+            width: 40px;
+            height: 60px;
+            margin-left: 30px;
+            font-size: 18px; ;
+        }
+        #service{
+
+            float: left;
+            width:65% ;
+            margin-left:318px;
+            height: 154px;
+            border-top: 1px solid  silver;
+        }
+        #service p{
+            height: 81px;
+            line-height: 81px;
+        }
+        #service a{
+            color:skyblue;
+        }
+        #service li{
+            font-size: 18px;
+            width:176px ;
+            height:40px ;
+
+        }
+        #service img{
+            vertical-align: middle;
+        }
+        .change{
+            margin-left: 32px;
+        }
+        #pay{
+           border: 3px solid #71a4d3;
+        }
+        #size1{
+            background-color: #71a4d3;
+        }
+        #app{
+            border: 3px solid #7fc5ab;
+        }
+        #size2{
+            background-color: #7fc5ab;
+        }
+        #alipay{
+            border: 3px solid #e7ba7f;
+        }
+        #alipay .APP{
+            text-align: center;
+            width: 60px;
+            margin-left: 20px;
+        }
+        #size3{
+            background-color: #e7ba7f;
+        }
+        #asset{
+            border: 3px solid #ca8d7b;
+        }
+        #size4{
+            background-color: #ca8d7b;
+        }
+        #set{
+            border: 3px solid #70a4d3;
+        }
+        #size5{
+            background-color: #70a4d3;
+        }
+        #safe{
+            border: 3px solid #7fc5ab;
+        }
+        #size6{
+            background-color: #7fc5ab;
+        }
+        #contact{
+
+            float: left;
+            width: 1240px;
+            height: 345px;
+            border-top: 1px solid silver;
+            margin-left: 315px;
+        }
+        #contact p{
+            height: 70px;
+            line-height: 70px;
+        }
+        #contact ul{
+            float: left;
+            width:280px ;
+            height:200px;
+            background-color: #ffffff;
+
+        }
+        .touch{
+            float: left;
+            width:280px ;
+            height:200px;
+            margin-left: 30px;
+
+        }
+        .customer{
+            font-size: 26px;
+        }
+        .customer span{
+            color: red;
+        }
+        .link{
+            width: 100px;
+            height: 40px;
+            font-size: 16px;
+            background-color: #ff9d01;
+            border: 1px solid #ff9d01;
+        }
+        #details{
+            background-color: #ffffff;
+            border: 1px solid gainsboro;
+        }
+        #seek{
+            background-color: #ffffff;
+            border: 1px solid gainsboro;
+        }
+        #contact li{
+            float: left;
+            width: 250px;
+            height:30px;
+            margin-left: 20px;
+            margin-top: 20px;
+        }
+        footer{
+            text-align: center;
+            width: 100%;
+            height: 127px;
+            background-color: seashell ;
+        }
+        footer p{
+            position: relative;
+            top: 20px;
+            right: 800px;
+
+        }
+
+    </style>
+</head>
+<body>
+  <header>
+      <ul>
+          <li id="welcome"><a href="#"> 欢迎使用支付宝</a></li>
+          <li id="landing"><a href="#">登录 注册</a></li>
+          <li id="mine"><a href="#">我的支付宝</a></li>
+          <li id="safety"><a href="#">安全中心</a></li>
+          <li id="serve"><a href="#">服务大厅</a>&nbsp;&nbsp;<img src="images/Ali-l_07.png"></li>
+      </ul>
+  </header>
+  <nav>
+      <dl>
+          <dt id="logo"><img src="images/logo.png"></dt>
+          <dd id="hall">服务大厅</dd>
+          <dd id="switchover"><a href="#">切换到企业版&gt;</a></dd>
+      </dl>
+      <ul class="home">
+          <li><img src="images/Alipay_13.gif"><a href="#">首页</a></li>
+          <li><a href="#">常见问题</a></li>
+          <li><a href="#">自助服务</a></li>
+      </ul>
+  </nav>
+<div id="tab">
+    <span>请选择您遇到的问题</span>
+
+    <ul id="problem">
+
+        <li class="attention"><img class="pic" src="images/Ali-r_28.png">需要关注
+
+            <ul class="issue"  >
+                <li class="assist"><a href="#">父母支付宝入门手册</a></li>
+                <li><a href="#">手机校验码没收到</a></li>
+                <li><a href="#">退款金额不可用</a></li>
+                <li><a href="#">退款去向及进度查询</a></li>
+                <li><a href="#">银行卡收支明细如何查询</a></li>
+                <li class="assist"><a href="#">支付密码忘记怎么办</a></li>
+                <li><a href="#">登录密码忘记怎么办</a></li>
+                <li><a href="#">手机号码如何修改</a></li>
+                <li><a href="#">账户因风险无法登录</a></li>
+                <li><a href="#">支付没有到账</a></li>
+            </ul>
+
+        </li>
+        <li class="attention"><img class="pic" src="images/Ali-r_30.png">我的账户
+            <ul class="issue" id="account">
+                <li class="assist" style="background-color: #f4f4f4"><a href="#">父母支付宝入门手册</a></li>
+                <li><a href="#">手机校验码没收到</a></li>
+                <li><a href="#">退款金额不可用</a></li>
+                <li><a href="#">退款去向及进度查询</a></li>
+                <li><a href="#">银行卡收支明细如何查询</a></li>
+                <li class="assist"><a href="#">支付密码忘记怎么办</a></li>
+                <li><a href="#">登录密码忘记怎么办</a></li>
+                <li><a href="#">手机号码如何修改</a></li>
+                <li><a href="#">账户因风险无法登录</a></li>
+                <li><a href="#">支付没有到账</a></li>
+            </ul>
+
+        </li>
+        <li class="attention"><img class="pic" src="images/Ali-r_32.png">付款及退款
+            <ul class="issue" id="payment">
+                <li class="assist" style="background-color: #f4f4f4"><a href="#">父母支付宝入门手册</a></li>
+                <li><a href="#">手机校验码没收到</a></li>
+                <li><a href="#">退款金额不可用</a></li>
+                <li><a href="#">退款去向及进度查询</a></li>
+                <li><a href="#">银行卡收支明细如何查询</a></li>
+                <li class="assist"><a href="#">支付密码忘记怎么办</a></li>
+                <li><a href="#">登录密码忘记怎么办</a></li>
+                <li><a href="#">手机号码如何修改</a></li>
+                <li><a href="#">账户因风险无法登录</a></li>
+                <li><a href="#">支付没有到账</a></li>
+            </ul>
+
+        </li>
+        <li class="attention"><img class="pic" src="images/Ali-r_34.png">余额和花呗
+            <ul class="issue" id="balance">
+                <li class="assist" style="background-color: #f4f4f4"><a href="#">父母支付宝入门手册</a></li>
+                <li><a href="#">手机校验码没收到</a></li>
+                <li><a href="#">退款金额不可用</a></li>
+                <li><a href="#">退款去向及进度查询</a></li>
+                <li><a href="#">银行卡收支明细如何查询</a></li>
+                <li class="assist"><a href="#">支付密码忘记怎么办</a></li>
+                <li><a href="#">登录密码忘记怎么办</a></li>
+                <li><a href="#">手机号码如何修改</a></li>
+                <li><a href="#">账户因风险无法登录</a></li>
+                <li><a href="#">支付没有到账</a></li>
+            </ul>
+        </li>
+        <li class="attention"><img class="pic" src="images/Ali-r_36.png">活动与红包
+            <ul class="issue" id="packet">
+                <li class="assist" style="background-color: #f4f4f4"><a href="#">父母支付宝入门手册</a></li>
+                <li><a href="#">手机校验码没收到</a></li>
+                <li><a href="#">退款金额不可用</a></li>
+                <li><a href="#">退款去向及进度查询</a></li>
+                <li><a href="#">银行卡收支明细如何查询</a></li>
+                <li class="assist"><a href="#">支付密码忘记怎么办</a></li>
+                <li><a href="#">登录密码忘记怎么办</a></li>
+                <li><a href="#">手机号码如何修改</a></li>
+                <li><a href="#">账户因风险无法登录</a></li>
+                <li><a href="#">支付没有到账</a></li>
+            </ul>
+        </li>
+
+    </ul>
+
+    </div>
+<div id="main">
+    <span id="txt">自己寻找答案:</span>
+    <div id="input">
+    <input type="search" class="search" value="请输入关键字如余额宝"><input type="button" class="butt" value="搜索">
+
+        <div id="appraise"><img src="images/Ali-r_116.png">1分钟评价支付宝</div>
+    </div>
+    <div id="list">
+        <ul class="listing" id="pay">
+        <li class="size" id="size1"><img src="images/Alipay_23.gif"><span>付款方式</span></li>
+        <li class="project"><a href="#"> 快捷支付</a><a href="#"></a> </li>
+        <li class="project"><a href="#"> 余额宝相关</a></li>
+        <li class="project"><a href="#"> 蚂蚁花呗</a></li>
+        <li class="project"><a href="#"> 信用卡支付</a></li>
+        <li class="project"><a href="#"> 支付宝账户余额</a></li>
+        <li class="project"><a href="#"> 网上银行</a></li>
+        <li class="project"><a href="#"> 找人代付</a></li>
+        <li class="project"><a href="#"> 更多></a></li>
+<a href="#"></a>
+    </ul>
+
+        <ul class="listing"id="app" >
+            <li class="size" id="size2"><img src="images/Alipay_25.gif"><span>应用中心</span></li>
+            <li class="project"><a href="#"> 缴费</a></li>
+            <li class="project"><a href="#"> 还款</a></li>
+            <li class="project"><a href="#">买火车票</a> </li>
+            <li class="project"><a href="#"> 买汽车票</a></li>
+            <li class="project"><a href="#"> 转账到银行卡</a></li>
+            <li class="project"><a href="#"> 转账到支付宝账户</a></li>
+            <li class="project"><a href="#"> 保险、理财</a></li>
+            <li class="project"><a href="#"> 更多></a></li>
+
+        </ul>
+
+        <ul class="listing" id="alipay">
+            <li class="size" id="size3"><img src="images/Alipay_27.gif"><span CLASS="APP">支付宝APP</span></li>
+            <li class="project"><a href="#"> 支付宝app我的应用</a></li>
+            <li class="project"><a href="#"> 支付宝app付款方式</a></li>
+            <li class="project"><a href="#"> 支付宝app账户资产</a></li><a href="#"></a>
+            <li class="project"><a href="#"> 支付宝app账户设置</a></li>
+            <li class="project"><a href="#"> 支付宝app服务</a></li>
+            <li class="project"><a href="#"> 支付宝app账单</a></li>
+            <li class="project"><a href="#"> 支付宝app安全</a></li>
+            <li class="project"><a href="#"> 介绍与注册</a></li>
+
+        </ul>
+
+        <ul class="listing" id="asset">
+            <li class="size" id="size4"><img src="images/Alipay_37.gif"><span>账户资产</span></li>
+            <li class="project"><a href="#"> 充值</a></li>
+            <li class="project"><a href="#"> 提现</a></li>
+            <li class="project"><a href="#"> 余额宝</a></li>
+            <li class="project"><a href="#"> 集分宝</a></li>
+            <li class="project"><a href="#"> 交易记录</a></li>
+            <li class="project"><a href="#"> 充值记录</a></li>
+            <li class="project"><a href="#"> 提现记录</a></li>
+            <li class="project"><a href="#"> 红包相关</a></li>
+
+        </ul>
+
+        <ul class="listing" id="set">
+            <li class="size" id="size5"><img src="images/Alipay_39.gif"><span>账户设置</span></li>
+            <li class="project"><a href="#"> 手机服务</a></li>
+            <li class="project"><a href="#"> 账户密码</a></li>
+            <li class="project"><a href="#"> 账户登录名</a></li>
+            <li class="project"><a href="#">账户信息修改</a> </li>
+            <li class="project"><a href="#"> 账户信息管理</a></li>
+            <li class="project"><a href="#"> 实名认证</a></li>
+            <li class="project"><a href="#">联系人</a> </li>
+            <li class="project"><a href="#"> 更多></a><a href="#"></a> </li>
+
+        </ul>
+
+        <ul class="listing" id="safe">
+            <li class="size" id="size6"><img src="images/Alipay_41.gif"><span>安全中心</span></li>
+            <li class="project"><a href="#"> 手机安全设置</a></li>
+            <li class="project"><a href="#"> 安全控件</a></li>
+            <li class="project"><a href="#"> 安全保护问题</a></li>
+            <li class="project"><a href="#"> 手机安全设置</a></li>
+            <li class="project"><a href="#"> 安全策略</a></li>
+            <li class="project"><a href="#"> 支付盾</a></li>
+            <li class="project"><a href="#"> 更多></a></li>
+
+        </ul>
+        <span class="more">更多问题分类></span>
+
+
+
+
+
+
+    </div>
+    <div id="service">
+    <p>常用自助服务：</p>
+    <ul>
+        <li><img src="images/ali_41.png">&nbsp;<a href="#">激活账户</a></li>
+        <li class="change"><img src="images/ali_43.png">&nbsp;<a href="#"> 修改邮箱名</a></li>
+        <li class="change"><img src="images/ali_45.png">&nbsp;<a href="#"> 重置登录密码</a></li>
+        <li class="change"><img src="images/ali_47.png">&nbsp;<a href="#"> 重置支付密码</a></li>
+        <li class="change"><img src="images/ali_49.png">&nbsp;<a href="#"> 取消数字证书</a></li>
+        <li class="change"><img src="images/ali_51.png">&nbsp;<a href="#"> 修改手机号码</a></li>
+
+    </ul>
+
+    </div>
+    <div id="contact">
+        <p class="call">联系我们</p>
+        <ul >
+            <li class="customer">在线客服</li>
+            <li class="matter">适用人群<br>
+            喜欢在线交流的人群</li>
+
+            <li><input  class="link" type="button" value="立即使用"></li>
+
+        </ul>
+        <ul class="touch">
+            <li class="customer">热线电话-<span>繁忙</span></li>
+            <li class="matter">贴心的服务热线：800-2400<br>
+              喜欢在线交流的人群</li>
+            <li class="check"><a href="#"> 查看电话指引>></a></li>
+
+        </ul>
+        <ul class="touch">
+            <li class="customer">无线服务</li>
+            <li class="matter">用手机支付宝的客服>><br>
+                享受随身携带的客户服务</li>
+            <li class=""><input class="link" id="details" type="button" value="查看详情"></li>
+
+        </ul>
+        <ul class="touch">
+            <li class="customer">提建议</li>
+            <li class="matter">如果您对我们的产品有任何想法<br>
+                或者建议，欢迎提出</li>
+            <li class=""><input class="link" id="seek" type="button" value="搜索一下"></li>
+
+        </ul>
+
+    </div>
+</div>
+<footer>
+    <p>
+        诚征英才
+        联系我们
+        International Business </p>
+
+   <p>ICP证：沪B2-20150087</p>
+
+
+</footer>
+</body>
+</html>
